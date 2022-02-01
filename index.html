@@ -1,0 +1,40 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Звонки</title>
+
+  <!-- css -->
+
+  <!-- js -->
+  <script type="text/javascript" src="./lib/jssip-3.2.14.js"></script>
+</head>
+<body>
+  <div>
+    <div>
+      <input type="text" id="phone" value="89631250042">
+    </div>
+
+    <div>
+      <p id="info"></p>
+    </div>
+
+    <div>
+      <button id="call" onclick="call(document.getElementById('phone').value)">Позвонить</button>
+    </div>
+
+    <div>
+      <button id="answer" onclick="answer()">Ответить</button>
+    </div>
+
+    <div>
+      <button id="reject" onclick="reject()">Отменить</button>
+    </div>
+  </div>
+
+  <audio id="localAudio"></audio>
+  <audio id="remoteAudio"></audio>
+  <audio id="sounds" src="./sounds/rejected.mp3"></audio>
+
+  <script src="./index.js"></script>
+</body>
+</html>

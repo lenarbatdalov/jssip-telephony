@@ -1,0 +1,7 @@
+# ignore ide directories
+.idea/
+.vscode
+.project/
+
+# ignore clientbase configuration file
+provider_settings.json
